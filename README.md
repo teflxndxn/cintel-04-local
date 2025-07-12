@@ -1,13 +1,11 @@
 # cintel-04-local
 
-## Python Installation (macOS)
+## Python Installation and Setup
 
-To verify Python and pip are installed:
+I installed Python 3.12.1 on my macOS machine using the official installer from python.org.  
+During installation, I ran the `Install Certificates.command` as instructed.
+
+To ensure my terminal uses the official Python instead of Anaconda, I updated my PATH by adding:
 
 ```bash
-python3 --version
-# Output: Python 3.12.7
-
-python3 -m pip --version
-# Output: pip 25.0.1 from /opt/anaconda3/lib/python3.12/site-packages/pip (python 3.12)
-
+export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH"
