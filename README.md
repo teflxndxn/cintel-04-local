@@ -34,3 +34,21 @@ Output:
 Python 3.12.1
 pip 23.2.1 from /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pip (python 3.12)
 ```
+## Local Setup
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/teflxndxn/cintel-04-local.git
+   cd cintel-04-local
+
+Create and activate the virtual environment:
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+Install dependencies:
+python3 -m pip install --upgrade pip setuptools
+python3 -m pip install -r requirements.txt
+
+Run the app:
+python3 app.py
