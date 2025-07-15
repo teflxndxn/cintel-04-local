@@ -52,3 +52,79 @@ python3 -m pip install -r requirements.txt
 
 Run the app:
 python3 app.py
+
+## PyShiny Penguins Dashboard Setup & Run Guide
+
+### 1. Create and activate the virtual environment
+
+**Mac/Linux:**
+```bash
+python -m venv .venv
+source .venv/bin/activate
+
+2. Install required packages
+Make sure you have a requirements.txt file with all necessary packages. Then run:
+pip install -r requirements.txt
+
+3. Run the Shiny app
+shiny run --reload --launch-browser penguins/app.py
+
+4. Recommended VS Code Extension for Shiny
+Install the Shiny for Python extension for better integration:
+
+Open the Extensions pane in VS Code (Cmd+Shift+X or Ctrl+Shift+X)
+Search for Shiny for Python
+Click Install
+This extension helps you run and debug PyShiny apps directly inside VS Code.
+
+5. Project folder structure
+cintel-04-local/
+├── .venv/
+├── penguins/
+│   └── app.py
+├── requirements.txt
+└── README.md
+```
+# Module 4: PyShiny App – Penguins Dataset
+
+This project is a PyShiny web application built using the [Palmer Penguins dataset](https://allisonhorst.github.io/palmerpenguins/). It allows users to interactively explore penguin species data using filters and visualizations.
+
+## 📊 Features
+
+- Interactive charts with `Plotly` and `Matplotlib`
+- Filters based on penguin species
+- Reactive calculations using `@reactive.calc`
+- Exported with `shinylive` for easy deployment
+
+## Live App
+
+Click the link below to view the live version of this app (hosted via GitHub Pages):
+
+**[Live App on GitHub Pages]( https://teflxndxn.github.io/cintel-04-local/)**
+
+##  Project Structure
+cintel-04-local/
+├── app.py # Main PyShiny application file
+├── docs/ # Exported static app (for GitHub Pages)
+│ ├── index.html
+│ └── ...other files
+├── .gitignore
+├── README.md
+└── requirements.txt
+
+## 🛠️ How to Run Locally
+
+1. Clone the repo  
+2. Create a virtual environment  
+3. Install dependencies  
+4. Run the app with Shiny
+
+```bash
+git clone https://github.com/teflxndxn/cintel-04-local.git
+cd cintel-04-local
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+shiny run --reload --launch-browser app.py
+
+
